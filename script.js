@@ -1,19 +1,19 @@
 // Array of image sources and project links
 const projects = [
     {
-        src: "images/portfolio website.jpg",
+        src: "portfolio website.jpg",
         link: "#" // Replace with the actual project URL
     },
     {
-        src: "images/about&skills page.jpg",
+        src: "about&skills page.jpg",
         link: "#" // Replace with the actual project URL
     },
     {
-        src: "images/project section.jpg",
+        src: "project section.jpg",
         link: "#" // Replace with the actual project URL
     },
     {
-        src: "images/photo_2024-10-30_07-47-47.jpg",
+        src: "photo_2024-10-30_07-47-47.jpg",
         link: "#" // Replace with the actual project URL
     }
 ];
