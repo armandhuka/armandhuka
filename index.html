@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about-sec">About</a></li>
+                <li><a href="#Projects">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main id="Home">
+        <div>
+        <h1>ARMAN DHUKA</h1>
+        <p>I AM A FRONTEND <span>WEB DEVELOPER</span></p>
+
+    </div>
+    </main>
+
+     <section class="about-section" id="about-sec"> 
+        <!-- About Section -->
+       <section id="about">
+            <h2>ABOUT</h2>
+            <p>
+                I’m Arman Dhuka, a self-taught web developer in 12th grade with a commerce background.
+                I specialize in HTML, CSS, JavaScript, and WordPress, all of which I learned through YouTube
+                and online resources. I'm passionate about creating responsive websites and aspire to grow as
+                a full-stack developer.
+            </p>
+            <br>
+        </section> 
+    
+        <!-- Skills Section -->
+         <section id="skills">
+            <h2>SKILLS</h2>
+            <div class="skill-list">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">ai</div>
+
+            </div>
+        </section> 
+     </section> 
+    
+    <section id="Projects">
+        <div class="br"></div>
+        <h2>projects</h2>
+    
+        <div class="project-images-box">
+            <button class="scroll-btn left" onclick="scrollLeft()">❮</button>
+            <div class="project-images">
+                <!-- Images will be added dynamically here with JavaScript -->
+            </div>
+            <button class="scroll-btn right" onclick="scrollRight()">❯</button>
+        </div>
+    </section>
+
+    <section class="contact-section" id="Contact">
+        <h2>CONTACT</h2>
+        <p class="contact-info">9265350594</p>
+        <p class="contact-info">dhukaarman7585@gmail.com</p>
+        
+        <div class="button-container">
+            <button onclick="openLink('https://wa.me/9265350594')">WHATSAPP</button>
+            <button onclick="openLink('https://t.me/username')">TELEGRAM</button>
+            <button onclick="openLink('https://github.com/username')">GITHUB</button>
+            <button onclick="openLink('https://linkedin.com/in/username')">LINKEDIN</button>
+            <button onclick="downloadResume()">RESUME</button>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

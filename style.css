@@ -1,0 +1,336 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f1df;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h2{ font-weight: 800;}
+
+
+/* Header Section */
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #74686c;
+}
+
+header nav ul li a:hover {
+    color: #d78b73;
+    font-size: 1.7em;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* Main Section */
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+main h1 {
+    font-size: 5em;
+    font-weight: 900;
+    color: #74686c;
+    text-shadow: 3px 1px 3px #837277;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.8em;
+    color: #5a5141;
+    text-align: right;
+    max-width: 80%;
+}
+
+main p span {
+    color: #d78b73;
+}
+
+/* About and Skills Section */
+.about-section {
+    width: 100%;
+    height: 100vh;
+    padding: 60px 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    color: #74686c;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #74686c;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#skills .skill-list {
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.skill {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f8f1df;
+    background-color: #74686c;
+    border-radius: 10px;
+    transition: background-color 0.5s linear;
+}
+
+.skill:hover {
+    background-color: #c0705e;
+}
+
+/* Project Section */
+#Projects {
+    width: 100%;
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#Projects h2 {
+    font-size: 2.5em;
+    color: #74686c;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 60px 12%;
+    text-transform: uppercase;
+}
+
+.project-images-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-images {
+    width: 90%;
+    max-width: 500px;
+    overflow: hidden;
+    border: 10px solid #5a5141;
+    border-radius: 20px;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-btn {
+    font-size: 3em;
+    padding: 10px;
+    color: #74686c;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Contact Section */
+.contact-section {
+    width: 100%;
+    height: 100vh;
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #74686c;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: -80px;
+    text-align: left;
+    padding: 60px 12%;
+}
+
+.contact-info {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px auto;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #74686c;
+    background-color: #c0705e;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #c08369;
+}
+
+h2:hover{
+    letter-spacing: 20px;
+    color: #c0705e;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+    header {
+        position: absolute;
+    }
+    #Home{
+        height: 100px;
+    }
+
+    main h1 {
+        font-size: 4em;
+    }
+
+    .about-section, .contact-section {
+        align-items: center;
+    }
+
+    .about-section h2, #Projects h2, .contact-section h2 {
+        text-align: center;
+    }
+
+    .contact-section,#Projects,.about-section{
+        height: auto;
+    }
+
+    .project-images {
+        max-width: 90%;
+    }
+
+    #skills .skill-list{
+        display: grid;
+        grid-template-columns: 250px 250px;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    header {
+        position: absolute;
+    }
+
+    main {
+        min-height: 80vh;
+    }
+
+    main p {
+        font-size: 1.5em;
+    }
+
+    #skills .skill-list,.button-container {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    #Projects h2 {
+        font-size: 2em;
+    }
+
+    .contact-section {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header{
+        display: none;
+    }
+    main {
+        min-height: 300px;
+    }
+
+    main h1 {
+        font-size: 3em;
+    }
+
+    main p {
+        font-size: 1.2em;
+    }
+
+    .about-section h2, #Projects h2, .contact-section h2 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .contact-info {
+        font-size: 18px;
+    }
+}
